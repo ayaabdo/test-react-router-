@@ -1,0 +1,30 @@
+import React, { Component } from 'react';
+import ReactDom from 'react-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+const Login = () => {
+    <h1>
+        <link to = "/login">Login</link>
+    </h1>
+
+};
+const Logout = () => {
+      <h1>
+          <link to = "/logout">Logout</link>
+      </h1>
+};
+ const routes = {
+      <BrowserRouter>
+        <switch >
+            <div>
+            <Route path = "/login" component = {Login}/>
+            <Route path = "/logout" component = {Logout}/>
+            </div>
+        </switch>
+      </BrowserRouter>
+};
+
+
+
+
+ReactDOM.render(routes,document.getElementById('app'))
