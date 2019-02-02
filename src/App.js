@@ -1,44 +1,30 @@
-import React, { Component } from "react";
-import ReactDom from "react-dom";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import './App.css';
 
-function Login () {
-    return(
-    <div>
-        <link to = "/Login">Login</link>
-    </div>
+function Home() {
+    return (
+        <div className= "b">
+            <h1>Hi Geek! </h1>
+            <p>Welcome to our review website, Feel free to join us with ur linkedin account.</p>
+            <div className = "container">
+                    <button class="btn" >
+                        <link to ='https://www.linkedin.com'></link>
+                   </button>
+            </div>
+        </div>
     );
 }
-function Logout () {
-    return(
-      <div>
-          <link to = "/Logout">Logout</link>
-      </div>
-    );
-}
-
 class App extends Component {
     render() {
         return (
-            <h1>
-                <link to="/">Home</link>
-            </h1>
+        <Router>
+                    <Switch>
+                        <Route exact path = '/' component={Home}/>
+
+                    </Switch>
+        </Router>
         );
     }
 }
- function routes () {
-     return(
-      <BrowserRouter>
-        <switch >
-            <div>
-                <Route exact path = "/" component = {App}/>
-            <Route path = "/Login" component = {Login}/>
-            <Route path = "/Logout" component = {Logout}/>
-            </div>
-        </switch>
-      </BrowserRouter>
-     );
-}
-
-
-export default  routes;
+export default App;
