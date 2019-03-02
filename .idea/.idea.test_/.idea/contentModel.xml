@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\aya abdo\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\aya abdo\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_test_.-1400853350.00" t="ExcludeRecursive" />
+    <e p="C:\Users\aya abdo\Desktop\test_" t="IncludeFlat">
+      <e p="node_modules" t="ExcludeRecursive">
+        <e p="@types" t="IncludeRecursive" />
+        <e p="react" t="IncludeRecursive" />
+        <e p="react-dom" t="IncludeRecursive" />
+        <e p="react-linkedin-login" t="IncludeRecursive" />
+        <e p="react-router" t="IncludeRecursive" />
+        <e p="react-router-dom" t="IncludeRecursive" />
+        <e p="react-scripts" t="IncludeRecursive" />
+        <e p="yarn" t="IncludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
